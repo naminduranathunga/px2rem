@@ -19,7 +19,11 @@ class Calculator extends Component{
         div.appendChild(this.keypad.render());
 
         var div2 = document.createElement('div');
-        div2.innerHTML = `<a href="https://github.com/naminduranathunga/px2rem/" target="_blank" style="margin-top:0.25rem; display:block;"><span class="small-icon">${github_ico}</span> <i>Github.com/naminduranathunga/px2rem/</i></a>`;
+        div2.innerHTML = `<a href="https://github.com/naminduranathunga/px2rem/" target="_blank" style="margin-top:0.25rem; display:block;">
+            <small>
+                <span class="small-icon">${github_ico}</span> 
+                <i>Github.com/naminduranathunga/px2rem/</i>
+            </small></a>`;
         div.appendChild(div2);
         this.is_rendered = true;
         return div;
