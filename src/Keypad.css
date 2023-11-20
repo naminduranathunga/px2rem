@@ -1,0 +1,27 @@
+.keypad{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+}
+
+.single-key{
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    aspect-ratio: 1;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.single-key:hover{
+    background-color: #ccc;
+}
+
+.colspan-2{
+    grid-column: span 2;
+    aspect-ratio: inherit;
+    height: 100%;
+}
